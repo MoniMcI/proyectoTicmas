@@ -1,0 +1,383 @@
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="descripcion del sitio">
+	<meta name="keywords" content="Curriculum">
+	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+	<title>María Rosas - Desarrollador Web</title>
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+	<link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body>
+	<div class="container">
+		<nav class="navbar navbar-expand-lg fixed-top navbar-custom mb-4">
+		  <div class="container">
+		    <a class="navbar-brand" href="#">María Rosas - Web Developer</a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+		      <ul class="navbar-nav mb-2 mb-lg-0">
+		        <li class="nav-item">
+		          <a class="nav-link" href="#inicio">Inicio</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#antecedentesacademicos">Antecedentes Académicos</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#experiencialaboral">Experiencia Laboral</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#habilidades">Habilidades</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#contacto">Contacto</a>
+		        </li>
+		    </div>
+		  </div>
+		</nav>
+
+
+		<div class="container">
+
+			<!-- home -->
+			<section id="inicio">
+			  <div class="row">
+			    <div class="col-md-4 p-0 m-0">
+			    	<img src="img/jane-doe.jpg">
+			    </div>
+			    <div class="col-md-8 main-presentation">
+			    	<div class="centrar">
+				    	<h1 class="pt-2">María Rosas</h1>
+				    	<h3 class="mt-2">Desarrollador Web</h3>
+				    	<p id="texto" class="fw-bold"></p>
+
+	                    <div>
+	                        <button class="btn" onmouseover="mostrarEmail()"><i class="fa-solid fa-envelope"></i></button>
+	                        <button class="btn" onmouseover="mostrarTelefono()"><i class="fa-solid fa-phone"></i></button>
+	                        <button class="btn" onmouseover="mostrarDomicilio()"><i class="fa-solid fa-location-dot"></i></button>
+	                        <button class="btn" onmouseover="mostrarFechaNac()"><i class="fa-solid fa-calendar-days"></i></button>
+	                    </div>
+
+			    	</div>
+			    </div>
+			  </div>				
+			</section>
+			<!-- end of home -->
+
+			<!-- Antecedentes Academicos -->
+			<section id="antecedentesacademicos">
+
+                <div class="row" >
+                    <div class="col-md-4 bg-celeste centrar p-4">
+                        <h6 class="fw-bold">Antecedentes Académicos</h6>
+                        <h3 class="fw-bold">EDUCACION</h3>
+                    </div>
+
+                    <div class="col-md-8 bg-hueso" >
+                        <div class="p-4">
+                        	<h5 class="fw-bold color-heading">Formación</h5>
+
+                            <!-- Accordion bootstrap -->
+
+							<div class="m-4">
+							    <div class="accordion" id="myAccordion">
+							        <div class="accordion-item mb-4">
+							            <h2 class="accordion-header" id="headingOne">
+							                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne">Secundario Completo - Bachiller con Orientación Docente</button>									
+							            </h2>
+							            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+							                <div class="card-body">
+							                    <p>2004 - Colegio Santa Rosa de Viterbo - Salta </a></p>
+							                </div>
+							            </div>
+							        </div>
+							        <div class="accordion-item mb-4">
+							            <h2 class="accordion-header" id="headingTwo">
+							                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo">Universitario Completo - Ingeniero en Sistemas</button>
+							            </h2>
+							            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+							                <div class="card-body">
+							                    <p>2015 - Ingeniería en Sistemas - Universidad Católica de Salta</a></p>
+							                </div>
+							            </div>
+							        </div>
+							        <div class="accordion-item mb-4">
+							            <h2 class="accordion-header" id="headingThree">
+							                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree">Terciario - Técnico en Marketing Digital</button>                     
+							            </h2>
+							            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+							                <div class="card-body">
+							                    <p>2020 - Universidad Siglo 21</p>
+							                </div>
+							            </div>
+							        </div>
+							    </div>
+							</div>                            
+
+
+                            <!-- end of accordion -->
+
+
+                        </div>
+                    </div>
+                </div>
+
+			</section>
+			<!-- end of antecedentes academicos -->
+
+			<!-- Experiencia laboral -->
+			<section id="experiencialaboral">
+
+			  <div class="row">
+
+			    <div class="col-md-4 bg-naranja centrar p-4 order-lg-2 order-1">
+			    	<h6 class="fw-bold">Antecedentes Laborales</h6>
+                    <h3 class="fw-bold">EXPERIENCIA</h3>
+			    </div>
+
+			    <div class="col-md-8 bg-beige p-4 order-lg-1 order-2 experience-box-container">
+
+			    	<div class="col-lg-6">
+
+	                	<div class="box">
+	                		<div class="content">
+	                			<span>2020 hasta el presente</span>
+	                			<h3>Programador Full Stack</h3>
+	                			<ul>
+	                				<li>Desarrollo Front End y Back End de aplicaciones con Typescript, Javascript, PHP, MySQL, HTML5, Django</li>
+	                				<li>Realización de test de aplicaciones</li>
+	                				
+	                			</ul>
+	                		</div>
+	                	</div>	
+
+	                	<div class="box">
+	                		<div class="content">
+	                			<span>2018 - 2020</span>
+	                			<h3>Desarrollador Web</h3>
+	                			<ul>
+	                				<li>Desarrollo web con diseño y creación de sitios web</li>
+	                				<li>Interfaces de usuario diseñadas y diseños intuitivos para sitios web</li>
+	                				<li>Pruebas de usuario completadas en nuevas aplicaciones web.</li>
+	                				
+	                			</ul>
+	                		</div>
+	                	</div>	                	
+
+	                </div>
+
+	                <div class="col-lg-6">
+
+	                	<div class="box">
+	                		<div class="content">
+	                			<span>2016 - 2018</span>
+	                			<h3> Programador, Servicios Técnicos IT</h3>
+	                			<ul>
+	                				<li>Toma de requerimientos con el cliente</li>
+	                				<li>Análisis de requerimientos y diseño de aplicaciones</li>
+	                				<li>Desarrollo de aplicaciones utilizando Javascript, PHP, MySQL</li>
+	                			</ul>
+	                		</div>
+	                	</div>	
+	
+	                	<div class="box">
+	                		<div class="content">
+	                			<span>2015 - 2016</span>
+	                			<h3>Programadora web, Sistemas Informáticos</h3>
+	                			<ul>
+	                				<li>Desarrollo de aplicaciones web en Javascript, PHP</li>
+	                				<li>Mantenimiento de aplicaciones web</li>
+	                				<li>Desarrollo de aplicaciones web en Javascript, PHP</li>
+	                				
+	                			</ul>
+	                		</div>
+	                	</div>	
+	
+	                </div>
+
+
+
+			    </div>
+
+			  </div>				
+			</section>
+			<!-- end of experiencia laboral -->
+
+			<!-- habilidades -->
+			<section id="habilidades">
+			  <div class="row">
+			    <div class="col-md-4 bg-rosa centrar p-4">
+			    	<h6 class="fw-bold">Tecnología</h6>
+                    <h3 class="fw-bold">HABILIDADES</h3>
+			    </div>
+			    <div class="col-md-8 p-4 bg-hueso">
+
+			    	<!-- lista habilidades -->
+					                <div class="row gy-4">
+
+                    <div class="col-md-4">
+                        <div class="p-4 bg-beige rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <h5 class="mt-4 mb-2 fw-bold">JAVASCRIPT</h5>
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" >
+                        <div class="p-4 bg-beige rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <h5 class="mt-4 mb-2 fw-bold">CSS</h5>
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" >
+                        <div class="p-4 bg-beige rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <h5 class="mt-4 mb-2 fw-bold">HTML</h5>
+                            <p></p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4" >
+                        <div class="p-4 bg-beige rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <h5 class="mt-4 mb-2 fw-bold">NODE JS</h5>
+                            <p></p>
+                        </div>
+                    </div>                    
+
+                    <div class="col-md-4" >
+                        <div class="p-4 bg-beige rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <h5 class="mt-4 mb-2 fw-bold">PYTHON</h5>
+                            <p></p>
+                        </div>
+                    </div>                    
+
+                    <div class="col-md-4" >
+                        <div class="p-4 bg-beige rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <h5 class="mt-4 mb-2 fw-bold">DJANGO</h5>
+                            <p></p>
+                        </div>
+                    </div>                    
+
+
+                </div>
+
+
+
+			    	<!-- end lista habilidades -->
+
+
+
+			    </div>
+			  </div>				
+			</section>
+			<!-- end of habilidades -->
+
+			<!-- contacto -->
+			<section id="contacto">
+			  <div class="row">
+			    <div class="col-md-4 bg-violeta centrar p-4 order-lg-2 order-1">
+                    <h3 class="fw-bold">CONTACTO</h3>
+			    </div>
+			    <div class="col-md-8 p-4 bg-beige order-lg-1 order-2">
+        	<div class="container">
+
+        		<div class="row justify-content-center text-center" data-aos="fade-up">
+                    <div class="col-lg-8 pb-4" data-aos="fade-up" data-aos-delay="300">
+                        <h5 class="color-heading fw-bold">Contactame</h5>
+                    </div>
+
+                    <div class="col-lg-8" data-aos="fade-up">
+	                     <form action="#" class="row g-lg-3 gy-3">
+	                     	<div class="form-group col-md-6">
+	                     		<input type="text" class="form-control" placeholder = "Nombre">
+	                     	</div> 
+	                     	<div class="form-group col-md-6">
+	                     		<input type="email" class="form-control" placeholder = "Email">
+	                     	</div> 	
+	                     	<div class="form-group col-12">
+	                     		<input type="text" class="form-control" placeholder = "Asunto">
+	                     	</div>
+	                     	<div class="form-group col-12">
+	                     		<textarea name="" rows="4" class="form-control" placeholder="Mensaje"></textarea>
+	                     	</div>
+	                     	<div class="form-group col-12 d-grid">
+	                     		<button type="submit" class="btn btn-contacto">Enviar</button>
+	                     	</div>	                     		                     		                     	                     	                   	
+	                    </form>                   	
+                    </div>
+
+                </div> 
+
+
+        	</div>
+
+			    </div>
+			  </div>				
+			</section>
+			<!-- end of contacto -->
+
+        <!-- footer -->
+        <footer class="py-5 px-lg-5">
+        	<div class="container">
+        		<div class="row gy-4 justify-content-between">
+        			<div class="col-auto">
+        				<p class="mb-0 fw-bold">
+        					Maria Rosas 2023 - Todos los derechos reservados
+        				</p>
+        			</div>
+                    <div class="col-auto">
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>       			
+        		</div>
+        	</div>
+        </footer>
+
+        <!-- end of footer -->
+
+				Image by <a href="https://www.freepik.com/free-photo/front-view-elegant-businesswoman-holding-clipboard-with-copy-space_11512725.htm#query=business%20woman&position=0&from_view=search&track=sph#position=0&query=business%20woman">Freepik</a>
+
+
+
+
+		</div> <!-- end of container -->
+
+	</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+<script src="js/scripts.js"></script>
+
+</body>
+</html>

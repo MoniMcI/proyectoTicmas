@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+:root {
+    --color-heading: #7a5932; /* color letra */
+    --color-celeste: #198597;
+    --color-naranja: #F8A577;
+    --color-naranja-texto: FF7F27;
+    --color-beige: #F0DECA;
+    --color-violeta: #A947AA;
+    --color-hueso: #FCF7F1;
+    --color-rosa: #F47378;
+    --color-accordion: #72C0CD;
+    --font-base: "Montserrat";
+
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #FAEDDF;
+	color: #7A5932;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--font-base);
+}
+
+h1{
+	/*font-family: 'Montserrat', sans-serif;*/
+	font-size: 8vw;
+	color: var(--color-heading);
+	line-height: 6vw;
+}
+
+img{
+  object-fit: cover;
+  width: 100%;
+}
+
+/* colores de fondo y de fuente */
+
+.bg-celeste{
+	background-color: var(--color-celeste);
+	color: white;
+
+}
+
+.bg-naranja{
+	background-color: var(--color-naranja);
+	color: white;
+	font-weight: bold;
+
+}
+
+.bg-beige{
+	background-color: var(--color-beige);
+	color: var(--color-heading);
+
+}
+
+.bg-rosa{
+	background-color: var(--color-rosa);
+	color: white;
+	font-weight: bold;	
+}
+
+.bg-violeta{
+	background-color: var(--color-violeta);
+	color: white;
+	font-weight: bold;		
+}
+.bg-hueso{
+	background-color: var(--color-hueso);
+	color: var(--color-heading);
+
+}
+
+.color-heading{
+	color: var(--color-heading);
+}
+
+.color-celeste{
+	color: var(--color-celeste);
+}
+
+.color-naranja{
+	color: var(--color-naranja-texto);
+}
+
+.centrar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#texto{
+	height: 50px;
+	padding: 10px 0;
+}
+
+
+/* Modify the background color */
+ 
+.navbar-custom {
+    background-color: #FAEDDF;
+}
+/* Modify brand and text color */
+ 
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: #7A5932;
+}
+
+.main-presentation{
+	background-color: #F0DECA;
+	padding: 100px 50px;
+}
+
+
+.full-height {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;    
+}
+
+.shadow-effect {
+    transition: all 0.5s;
+}
+
+.shadow-effect:hover {
+    box-shadow: -6px 6px 0 0 var(--color-heading);
+}
+
+.accordion-button{
+	color: white;
+	background-color: var(--color-heading);
+	font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+    color: white;
+    background-color: var(--color-celeste);
+}
+
+.card-body{
+	margin: 20px;
+}
+.accordion-item{
+	background-color: var(--color-beige);
+	color: var(--color-heading);
+
+}
+
+.experience-box-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.experience-box-container .box{
+    position: relative;
+    flex:1 1 20rem;
+    border-left: .2rem solid var(--color-heading);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;    
+}
+
+.experience-box-container .box::before{
+    content: '';
+    position: absolute;
+    top:0; left:-1rem;
+    height:2rem;
+    width:2rem;
+    border-radius: 50%;
+    background:var(--color-heading);
+}
+
+.experience-box-container .box .content{
+    background:#fff;
+    padding:1.5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+}
+
+.experience-box-container .box .content span{
+    color:#fff;
+    font-size: 1rem;
+    background:var(--color-heading);
+    border-radius: 50rem;
+    padding:.4rem 1rem;
+}
+
+.experience-box-container .box .content h3{
+    font-size: 1rem;
+    padding: .8rem 0 0 0;
+    color: var(--color-heading);
+    font-weight: bold;
+}
+
+.experience-box-container .box .content p{
+    font-size: 1rem;
+    color: var(--color-heading);
+}
+
+
+/* contacto */
+.btn-contacto {
+    background-color: var(--color-heading);
+    border-color: var(--color-heading);
+    color: var(--color-beige);
+    font-weight: bold;
+}
+
+.btn-contacto:hover,
+.btn-contacto:focus {
+    background-color: var(--color-violeta);
+    color: var(--color-beige);
+    border-color: var(--color-violeta);
+}
+
+/* social icons */
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-heading);
+    border-radius: 50px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
